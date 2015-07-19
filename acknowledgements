@@ -1,0 +1,12 @@
+
+This code reuses (lightly edits) example code from:
+
+    weewx 3.2.0    Tom Keffer and the weewx team
+    weewx-wd 1.0   Gary Roderick and the weewx-wd team
+    xstats 0.2     Matthew Wall
+
+I've taken the liberty to mostly remove their names from
+the content herein to try to ensure that bugs/complaints/requests
+come to me only, but the credit goes to them :-)
+
+    -- vince@skahan.net

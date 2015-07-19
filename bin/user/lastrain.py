@@ -15,7 +15,7 @@ from weewx.units import ValueHelper
 #    credit/thanks to them, please direct blame/bug-reports/requests to me alone
 """
 
-class vdsLastRainTags(SearchList):
+class lastRainTags(SearchList):
 
     def logdbg(self,message):
         """Syslog a debug message
