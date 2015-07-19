@@ -13,23 +13,10 @@
 	<tr> <td> current time </td><td> $current.dateTime</td> </tr>
 	<tr> <td> last db time </td><td> $latest.dateTime</td> </tr>
 	<tr> <td> last rain </td><td> $last_rain </td></tr>
-	<tr> <td> lastrain deltatime:  </td><td> $lastrain_delta_time </td></tr>
-
+	<tr> <td> time since last rain:  </td><td> $time_since_last_rain </td></tr>
 	</table>
 
   </body>
 
 </html>
-
-<!--
-        lastrain_vt = (lastrain_ts, 'unix_epoch', 'group_time')
-        lastrain_vh = ValueHelper(lastrain_vt, formatter=self.generator.formatter, converter=self.generator.converter)
-
-        lastrain_delta_time_vt = (delta_time, 'second', 'group_delta_time')
-        lastrain_delta_time_vh = ValueHelper(lastrain_delta_time_vt, formatter=self.generator.formatter, converter=self.generator.converter)
-
-        search_list_extension = {'last_rain' : lastrain_vh,  'lastrain_delta_time' :  lastrain_delta_time_vh }
-
-        return [search_list_extension]
--->
 
