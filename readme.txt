@@ -9,8 +9,11 @@ This search list extension offers extra tags:
 
 Installation instructions:
 
-1) run the installer:
+0) clone this repository
+git clone https://github.com/vinceskahan/vds-weewx-lastrain-extension.git /tmp/extensions/lastrain
 
+1) run the installer:
+cd /tmp
 setup.py install --extension extensions/lastrain
 
 2) restart weewx:
