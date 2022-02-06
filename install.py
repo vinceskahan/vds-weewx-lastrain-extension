@@ -9,7 +9,7 @@ def loader():
 class LastRainInstaller(ExtensionInstaller):
     def __init__(self):
         super(LastRainInstaller, self).__init__(
-            version="0.1",
+            version="0.2",
             name='lastrain',
             description='SLE for last rain information for weewx reports',
             author="Vince Skahan",

@@ -1,2 +1,5 @@
+0.2 2022-0206
+* changes to ValueHelper required by weewx 4.6.0
+
 0.1 2015-0719
 * initial release as packaged weewx extension

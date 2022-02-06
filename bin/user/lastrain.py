@@ -86,14 +86,19 @@ class lastRainTags(SearchList):
 
         # Wrap our ts in a ValueHelper
         delta_time_vt = (delta_time, 'second', 'group_deltatime')
-        delta_time_vh = ValueHelper(delta_time_vt, formatter=self.generator.formatter, converter=self.generator.converter)
+        try:
+            # 4.6.0 breaking change - must specify either context='short_delta' or context='long_delta'
+            delta_time_vh = ValueHelper(delta_time_vt, context='long_delta', formatter=self.generator.formatter, converter=self.generator.converter)
+        except:
+            # this works for prior to 4.6.0
+           delta_time_vh = ValueHelper(delta_time_vt, formatter=self.generator.formatter, converter=self.generator.converter)
 
         # Create a small dictionary with the tag names (keys) we want to use
         search_list_extension = {'last_rain' : last_rain_vh,  'time_since_last_rain' :  delta_time_vh }
 
         # uncomment to enable debugging
-        #### logdbg("last_rain  = %s" % last_rain_ts )
-        #### logdbg("delta_time = %s" % delta_time   )
+        #    self.logdbg("last_rain  = %s" % last_rain_ts )
+        #    self.logdbg("delta_time = %s" % delta_time   )
 
         return [search_list_extension]
 
