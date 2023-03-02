@@ -1,3 +1,5 @@
+(2023-0301: weewx 4.10 breaking change note - if you run weewx 4.10 or later, see  https://weewx.com/docs/upgrading.htm#Breaking_changes_for_skins_that_use_delta_times for changes you will need to make to your .tmpl files)
+
 lastrain - weewx extension that provides extended statistics for reports
 Copyright 2015 Vince Skahan
 
