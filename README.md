@@ -15,12 +15,15 @@ This branch is compatible with WeeWX versions 4.09 and earlier.   For WeeWX vers
 ### Installation instructions:
 This extension can be installed/uninstalled using the WeeWX extension installer.
 
-0) download the .zip file for this branch
+#### 1. download the .zip file for this branch
+
 `wget https://github.com/vinceskahan/vds-weewx-lastrain-extension/archive/refs/heads/weewx-pre-4.10.zip -O /var/tmp/lastrain-extension.zip`
 
-1) install the extension with the WeeWX extension installer
+#### 2. install the extension with the WeeWX extension installer
+
 `wee_extension --install /var/tmp/lastrain-extension.zip`
 
-2) restart weewx
+#### 3. restart weewx
+
 `sudo systemctl restart weewx`
 
